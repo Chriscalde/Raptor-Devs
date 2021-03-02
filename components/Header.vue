@@ -7,6 +7,9 @@
                   <a href="" class="px-5">Home</a>
               </li>
               <li>
+                  <a href="" class="px-5">Services</a>
+              </li>
+              <li>
                   <a href="" class="px-5">About Us</a>
               </li>
               <li>
