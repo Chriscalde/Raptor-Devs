@@ -22,29 +22,58 @@
           <div class="text-center flex flex-col justify-center mx-auto">
             <img src="../assets/icons/img_web.png" alt="" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Websites</h1>
-            <p>Text 1</p>
+            <p>Custom user-friendly websites for your business.</p>
           </div>
           <div class="text-center flex flex-col justify-center mx-auto">
             <img src="../assets/icons/img_mobile.png" alt="" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Mobile Applications</h1>
-            <p>Text 2</p>
+            <p>We can build the app you need.</p>
           </div>
           <div class="text-center flex flex-col justify-center mx-auto">
             <img src="../assets/icons/img_tech.png" alt="" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Tech Support</h1>
-            <p>Text 3</p>
+            <p>Technical support and software installation.</p>
           </div>
         </div>
       </section>
       <section id="about-us" class="rounded-xl bg-gray-900 m-6">
         <div class=" m-6 text-center">
           <h2 class="text-4xl font-bold text-white">About Us</h2>
+          <div class="grid lg:grid-cols-2 gap-8 p-10">
+            <div class="flex flex-col">
+              <h2 class="text-2xl text-white mb-5">We are a web development company. Providing our clients with the best technological solutions we can offer.</h2>
+              <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-pencil align-middle mr-4"></i>Custom Made</a>
+              <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-user-check align-middle mr-4"></i>User Friendly</a>
+              <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-trending-up align-middle mr-4"></i>Marketing Solutions</a>
+            </div>
+            <div class="justify-center items-center mx-auto">
+              <img src="../assets/img/iphone_mockup.png" alt="" class="object-contain">
+            </div>
+          </div>
         </div>
       </section>
       <section id="contact">
         <div class="text-center">
           <h2 class="text-4xl font-bold">Contact</h2>
         </div>
+        <div class="grid lg:grid-cols-2 gap-12 p-10">
+          <div id="contact-mail" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-5 lg:mx-auto lg:px-24 py-5 bg-white">
+            <i class="bx bx-mail-send text-4xl"></i>
+            <h3 class="text-2xl font-bold text-gray-500">Email</h3>
+            <p>contact@raptordevs.com</p>
+          </div>
+          <div id="contact-phone" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-5 lg:mx-auto lg:px-24 py-5 bg-white">
+            <i class="bx bx-phone-call text-4xl"></i>
+            <h3 class="text-2xl font-bold text-gray-500">Call Us</h3>
+            <p>+1 (385) 234 97 00</p>
+          </div>
+        </div>
+      </section>
+      <section id="footer-top">
+        <h2>Check our social media</h2>
+        <a><i class="bx bxl-twitter"></i>Twitter</a>
+        <a><i class="bx bxl-facebook"></i>Facebook</a>
+        <a><i class="bx bxl-instagram"></i>Twitter</a>
       </section>
     </div>
     <Footer/>
@@ -68,8 +97,8 @@ export default {}
 }
 #content{
   background: #ECE9E6;  /*fallback for old browsers*/
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #D3d3d3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #d3d3d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .title {
@@ -130,8 +159,8 @@ export default {}
 
 #services{
   background: #ECE9E6;  /*fallback for old browsers*/
-  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #D3D3D3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #D3D3D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #services-subtitle span{
   color:#EB6E15
@@ -150,5 +179,20 @@ export default {}
 #services img:hover {
   border-color: #e9772692;
   
+}
+#about-us img{
+  width: 300px;
+}
+#contact-mail i{
+  border-radius: 50%;
+  padding: 8px;
+  color: #EB6E15;
+  border:2px solid #EB6E15;
+}
+#contact-phone i{
+  border-radius: 50%;
+  padding: 8px;
+  color: #EB6E15;
+  border:2px solid #EB6E15;
 }
 </style>
