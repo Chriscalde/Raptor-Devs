@@ -69,22 +69,22 @@
           </div>
         </div>
         <div class="bg-white shadow-2xl rounded-2xl m-12 p-8">
-          <div class="grid grid-cols-1 gap-6">
+          <form @submit.prevent="sendMail">
             <label class="block">
               <span>Full name</span>
-              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="name" name="name" type="text" class="mt-1 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>Phone</span>
-              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="phone" name="phone" type="text" class="mt-1 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>Email</span>
-              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="mail" name="mail" type="mail" class="mt-1 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>What are you interested in?</span>
-              <select class="mt-1 w-full bg-gray-200 rounded-md">
+              <select v-model="type" name="type" class="mt-1 w-full bg-gray-200 rounded-md">
                 <option>Website</option>
                 <option>Application</option>
                 <option>Web Design</option>
@@ -94,12 +94,10 @@
             </label>
             <label class="block">
               <span>Details</span>
-              <textarea class="bg-gray-200 w-full rounded" rows="3"></textarea>
+              <textarea v-model="description" name="description" class="bg-gray-200 w-full rounded" rows="3"></textarea>
             </label>
-            <label class="flex justify-center items-center">
-            <button id="btnSend" class="mt-3 px-5 py-2 rounded-md text-2xl text-white">Send</button>
-            </label>
-          </div>
+            <input id="btnSend" type="submit" value="Send" class="mt-3 px-5 py-2 rounded-md text-2xl text-white">
+          </form>
         </div>
       </section>
       <section id="footer-top">
@@ -124,7 +122,33 @@
 </template>
 
 <script>
-export default {}
+import emailjs from 'emailjs-com'
+export default {
+  data(){
+    return{
+      name:'',
+      mail: '',
+      phone: '',
+      type: '',
+      description:''
+    }
+  },
+  methods:{
+    sendMail(e){
+      try{
+        emailjs.sendForm('service_oog6qul','template_riwb6hm',e.target,'user_yf8l6RazsRR1DqwdKclmB',{
+          name: this.name,
+          mail: this.mail,
+          phone: this.phone,
+          type: this.type,
+          description: this.description
+        })
+      }catch(error){
+        console.log(error)
+      }
+    }
+  }
+}
 </script>
 
 <style>
