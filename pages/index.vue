@@ -1,8 +1,8 @@
 <template>
   <div class="">
-    <Header/>
+    <Header class="fixed top-0 w-full"></Header>
     <div class="" id="content">
-      <section id="hero" class="bg-gray-900">
+      <section id="hero" class="bg-gray-900 mt-32">
         <div class="grid lg:grid-cols-2 gap-8 p-10">
             <div class="left-hero justify-center items-center text-center mx-auto">
               <h1 class="text-6xl text-white font-bold">Need a website?</h1>
@@ -40,7 +40,7 @@
         <div class=" m-6 text-center">
           <h2 class="text-4xl font-bold text-white">About Us</h2>
           <div class="grid lg:grid-cols-2 gap-8 p-10">
-            <div class="flex flex-col">
+            <div id="about-content" class="flex flex-col">
               <h2 class="text-2xl text-white mb-5">We are a web development company. Providing our clients with the best technological solutions we can offer.</h2>
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-pencil align-middle mr-4"></i>Custom Made</a>
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-user-check align-middle mr-4"></i>User Friendly</a>
@@ -68,12 +68,55 @@
             <p>+1 (385) 234 97 00</p>
           </div>
         </div>
+        <div class="bg-white shadow-2xl rounded-2xl m-12 p-8">
+          <div class="grid grid-cols-1 gap-6">
+            <label class="block">
+              <span>Full name</span>
+              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+            </label>
+            <label class="block">
+              <span>Phone</span>
+              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+            </label>
+            <label class="block">
+              <span>Email</span>
+              <input type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+            </label>
+            <label class="block">
+              <span>What are you interested in?</span>
+              <select class="mt-1 w-full bg-gray-200 rounded-md">
+                <option>Website</option>
+                <option>Application</option>
+                <option>Web Design</option>
+                <option>Tech Support</option>
+                <option>Online Marketing</option>
+              </select>
+            </label>
+            <label class="block">
+              <span>Details</span>
+              <textarea class="bg-gray-200 w-full rounded" rows="3"></textarea>
+            </label>
+            <label class="flex justify-center items-center">
+            <button id="btnSend" class="mt-3 px-5 py-2 rounded-md text-2xl text-white">Send</button>
+            </label>
+          </div>
+        </div>
       </section>
       <section id="footer-top">
-        <h2>Check our social media</h2>
-        <a><i class="bx bxl-twitter"></i>Twitter</a>
-        <a><i class="bx bxl-facebook"></i>Facebook</a>
-        <a><i class="bx bxl-instagram"></i>Twitter</a>
+        <div class="grid lg:grid-cols-2 gap-8 p-8">
+          <div id="contact-top-left">
+            <h3 class="text-4xl font-bold">Raptor <span>Devs</span></h3>
+            <p>West Jordan, Utah</p>
+            <p>84081</p>
+            <p>+1 385 234 97 00</p>
+          </div>
+          <div id="contact-top-right" class="flex flex-col justify-end  items-start">
+            <h2 class="text-2xl">Check our social media</h2>
+            <a><i class="bx bxl-twitter mr-4"></i>Twitter</a>
+            <a href="https://www.facebook.com/Raptordevs" target="_blank" ><i class="bx bxl-facebook mr-4"></i>Facebook</a>
+            <a><i class="bx bxl-instagram mr-4"></i>Instagram</a>
+          </div>
+        </div>
       </section>
     </div>
     <Footer/>
@@ -183,6 +226,10 @@ export default {}
 #about-us img{
   width: 300px;
 }
+#about-content a:hover {
+  transform: scale(1.15);
+  cursor: default;
+}
 #contact-mail i{
   border-radius: 50%;
   padding: 8px;
@@ -194,5 +241,19 @@ export default {}
   padding: 8px;
   color: #EB6E15;
   border:2px solid #EB6E15;
+}
+#btnSend {
+  background-color: #EB6E15;
+  border: 2px solid #ffffff;
+}
+#btnSend:hover{
+  background-color: #9b4a10;
+}
+#contact-top-left h3{
+  font-family: 'Roboto', sans-serif;
+}
+#contact-top-left span{
+  font-family: 'Roboto', sans-serif;
+  color: #EB6E15;
 }
 </style>
