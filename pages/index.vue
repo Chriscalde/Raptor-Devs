@@ -3,7 +3,7 @@
     <Header class="fixed top-0 w-full"></Header>
     <div class="" id="content">
       <section id="hero" class="bg-gray-900 mt-32">
-        <div class="grid lg:grid-cols-2 gap-8 p-10">
+        <div class="grid lg:grid-cols-2 gap-8 p-10 shadow-2xl">
             <div class="left-hero justify-center items-center text-center mx-auto">
               <h1 class="text-6xl text-white font-bold">Need a website?</h1>
               <h1 class="text-6xl text-white font-extrabold">We got you</h1>
@@ -41,7 +41,7 @@
           <h2 class="text-4xl font-bold text-white">About Us</h2>
           <div class="grid lg:grid-cols-2 gap-8 p-10">
             <div id="about-content" class="flex flex-col">
-              <h2 class="text-2xl text-white mb-5">We are a web development company. Providing our clients with the best technological solutions we can offer.</h2>
+              <h2 class="text-2xl text-white mb-5">We are a web development company. Providing our clients with the best technological solutions.</h2>
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-pencil align-middle mr-4"></i>Custom Made</a>
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-user-check align-middle mr-4"></i>User Friendly</a>
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-trending-up align-middle mr-4"></i>Marketing Solutions</a>
@@ -57,30 +57,30 @@
           <h2 class="text-4xl font-bold">Contact</h2>
         </div>
         <div class="grid lg:grid-cols-2 gap-12 p-10">
-          <div id="contact-mail" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-5 lg:mx-auto lg:px-24 py-5 bg-white">
+          <div id="contact-mail" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-2 lg:my-5 lg:mx-auto lg:px-24 py-5 bg-white">
             <i class="bx bx-mail-send text-4xl"></i>
             <h3 class="text-2xl font-bold text-gray-500">Email</h3>
-            <p>contact@raptordevs.com</p>
+            <a href="mailto:contact@raptordevs.com">contact@raptordevs.com</a>
           </div>
-          <div id="contact-phone" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-5 lg:mx-auto lg:px-24 py-5 bg-white">
+          <div id="contact-phone" class="shadow-xl rounded-2xl flex flex-col justify-center items-center my-2 lg:my-5 lg:mx-auto lg:px-24 py-5 bg-white">
             <i class="bx bx-phone-call text-4xl"></i>
             <h3 class="text-2xl font-bold text-gray-500">Call Us</h3>
-            <p>+1 (385) 234 97 00</p>
+            <a href="tel:+13852349700">+1 (385) 234 97 00</a>
           </div>
         </div>
         <div class="bg-white shadow-2xl rounded-2xl m-12 p-8">
           <form @submit.prevent="sendMail">
             <label class="block">
               <span>Full name</span>
-              <input v-model="name" name="name" type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="name" name="name" type="text" class="mt-1 py-2 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>Phone</span>
-              <input v-model="phone" name="phone" type="text" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="phone" name="phone" type="text" class="mt-1 py-2 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>Email</span>
-              <input v-model="mail" name="mail" type="mail" class="mt-1 w-full bg-gray-200 rounded-md">
+              <input v-model="mail" name="mail" type="mail" class="mt-1 py-2 w-full bg-gray-200 rounded-md">
             </label>
             <label class="block">
               <span>What are you interested in?</span>
@@ -106,13 +106,13 @@
             <h3 class="text-4xl font-bold">Raptor <span>Devs</span></h3>
             <p>West Jordan, Utah</p>
             <p>84081</p>
-            <p>+1 385 234 97 00</p>
+            <a href="tel:+13852349700">+1 (385) 234 97 00</a>
           </div>
           <div id="contact-top-right" class="flex flex-col justify-end  items-start">
-            <h2 class="text-2xl">Check our social media</h2>
-            <a><i class="bx bxl-twitter mr-4"></i>Twitter</a>
-            <a href="https://www.facebook.com/Raptordevs" target="_blank" ><i class="bx bxl-facebook mr-4"></i>Facebook</a>
-            <a><i class="bx bxl-instagram mr-4"></i>Instagram</a>
+            <h2 class="text-2xl font-bold">Check our social media</h2>
+            <a class="text-xl"><i class="bx bxl-twitter mr-4"></i>Twitter</a>
+            <a href="https://www.facebook.com/Raptordevs" target="_blank" class="text-xl" ><i class="bx bxl-facebook mr-4"></i>Facebook</a>
+            <a class="text-xl"><i class="bx bxl-instagram mr-4"></i>Instagram</a>
           </div>
         </div>
       </section>
