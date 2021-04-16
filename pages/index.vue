@@ -9,7 +9,7 @@
               <h1 class="text-6xl text-white font-extrabold">We got you</h1>
             </div>
             <div class="right-hero">
-              <img src="../assets/img/mb.png" alt="" rel='preload'>
+              <img src="../assets/img/mb.png" alt="macbook_img" rel='preload'>
             </div>
         </div>
       </section>
@@ -20,17 +20,17 @@
         <p id="services-subtitle" class="text-center text-2xl">Check out the <span class="font-bold">services</span> we offer</p>
         <div class="grid lg:grid-cols-3 gap-8 p-10">
           <div class="text-center flex flex-col justify-center mx-auto">
-            <img src="../assets/icons/img_web.png" alt="" class="rounded-full mx-auto object-cover">
+            <img src="../assets/icons/img_web.png" alt="website_img" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Websites</h1>
             <p>Custom user-friendly websites for your business.</p>
           </div>
           <div class="text-center flex flex-col justify-center mx-auto">
-            <img src="../assets/icons/img_mobile.png" alt="" class="rounded-full mx-auto object-cover">
+            <img src="../assets/icons/img_mobile.png" alt="mobile_img" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Mobile Applications</h1>
             <p>We can build the app you need.</p>
           </div>
           <div class="text-center flex flex-col justify-center mx-auto">
-            <img src="../assets/icons/img_tech.png" alt="" class="rounded-full mx-auto object-cover">
+            <img src="../assets/icons/img_tech.png" alt="tech_img" class="rounded-full mx-auto object-cover">
             <h1 class="text-2xl font-bold">Tech Support</h1>
             <p>Technical support and software installation.</p>
           </div>
@@ -47,7 +47,7 @@
               <a class="text-2xl text-white align-middle my-2"><i class="text-4xl bx bx-trending-up align-middle mr-4"></i>Marketing Solutions</a>
             </div>
             <div class="justify-center items-center mx-auto">
-              <img src="../assets/img/iphone_mockup.png" alt="" class="object-contain">
+              <img src="../assets/img/iphone_mockup.png" alt="app_img" class="object-contain">
             </div>
           </div>
         </div>
