@@ -104,15 +104,15 @@
         <div class="grid lg:grid-cols-2 gap-8 p-8">
           <div id="contact-top-left">
             <h3 class="text-4xl font-bold">Raptor <span>Devs</span></h3>
-            <p>West Jordan, Utah</p>
-            <p>84081</p>
+            <p>Riverton, Utah</p>
+            <p>84065</p>
             <a href="tel:+13852349700">+1 (385) 234 97 00</a>
           </div>
           <div id="contact-top-right" class="flex flex-col justify-end  items-start">
             <h2 class="text-2xl font-bold">Check our social media</h2>
             <a class="text-xl"><i class="bx bxl-twitter mr-4"></i>Twitter</a>
             <a href="https://www.facebook.com/Raptordevs" target="_blank" class="text-xl" ><i class="bx bxl-facebook mr-4"></i>Facebook</a>
-            <a class="text-xl"><i class="bx bxl-instagram mr-4"></i>Instagram</a>
+            <a href="https://www.instagram.com/raptordevs/" target="_blank" class="text-xl"><i class="bx bxl-instagram mr-4"></i>Instagram</a>
           </div>
         </div>
       </section>
